@@ -16,7 +16,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="css/styles.css" />
-    <title>TEST-3 TEST-3 TEST-3</title>
+    <title>Homework № 5</title>
 </head>
 
 <body>
@@ -49,7 +49,7 @@
         <section class="welcome-section">
             <div class="container welcome-container">
                 <h1 class="welcome">Effective Solutions for Your Business</h1>
-                <button class="button-wel" type="button">Order Service</button>
+                <button class="button-wel" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
         <!-- #endregion -->
@@ -151,7 +151,6 @@
                                 </li>
                             </ul>
                         </div>
-
                     </li>
                     <li class="team-photo">
                         <img width="264" class="team-member" src="images/team/Tom_Ford.jpg" alt="Tom_Ford" />
@@ -187,9 +186,7 @@
                                     </a>
                                 </li>
                             </ul>
-
                         </div>
-
                     </li>
                     <li class="team-photo">
                         <img width="264" class="team-member" src="images/team/Camila_Garcia.jpg" alt="Camila_Garcia" />
@@ -226,7 +223,6 @@
                                 </li>
                             </ul>
                         </div>
-
                     </li>
                     <li class="team-photo">
                         <img width="264" class="team-member" src="images/team/Daniel_Wilson.jpg" alt="Daniel_Wilson" />
@@ -263,7 +259,6 @@
                                 </li>
                             </ul>
                         </div>
-
                     </li>
                 </ul>
             </div>
@@ -280,8 +275,8 @@
                                 alt="banking-app" />
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task
-                                Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                                App · Cloud Storage App
+                                Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                                · Cloud Storage App
                             </p>
                         </div>
                         <div class="portfolio-border">
@@ -290,17 +285,15 @@
                         </div>
                     </li>
                     <li class="portfolio-item">
-
                         <div class="portfolio-thumb">
                             <img class="port-photo" width="360" src="./images/portfolio/cashless-payment.jpg"
                                 alt="cashless-payment" />
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task
-                                Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                                App · Cloud Storage App
+                                Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                                · Cloud Storage App
                             </p>
                         </div>
-
 
                         <div class="portfolio-border">
                             <h3 class="portfolio-title">Cashless Payment</h3>
@@ -308,14 +301,13 @@
                         </div>
                     </li>
                     <li class="portfolio-item">
-
                         <div class="portfolio-thumb">
                             <img class="port-photo" width="360" src="./images/portfolio/meditation-app.jpg"
                                 alt="meditation-app" />
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task
-                                Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                                App · Cloud Storage App
+                                Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                                · Cloud Storage App
                             </p>
                         </div>
                         <div class="portfolio-border">
@@ -324,14 +316,13 @@
                         </div>
                     </li>
                     <li class="portfolio-item">
-
                         <div class="portfolio-thumb">
                             <img class="port-photo" width="360" src="./images/portfolio/taxi-service.jpg"
                                 alt="taxi-service" />
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task
-                                Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                                App · Cloud Storage App
+                                Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                                · Cloud Storage App
                             </p>
                         </div>
 
@@ -341,14 +332,13 @@
                         </div>
                     </li>
                     <li class="portfolio-item">
-
                         <div class="portfolio-thumb">
                             <img class="port-photo" width="360" src="./images/portfolio/screen-illustrations.jpg"
                                 alt="screen-illustrations" />
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task
-                                Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                                App · Cloud Storage App
+                                Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                                · Cloud Storage App
                             </p>
                         </div>
 
@@ -358,14 +348,13 @@
                         </div>
                     </li>
                     <li class="portfolio-item">
-
                         <div class="portfolio-thumb">
                             <img class="port-photo" width="360" src="./images/portfolio/online-courses.jpg"
                                 alt="online-courses" />
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task
-                                Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                                App · Cloud Storage App
+                                Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                                · Cloud Storage App
                             </p>
                         </div>
 
@@ -379,6 +368,7 @@
         </section>
         <!-- #endregion -->
     </main>
+
     <footer class="footer">
         <!-- #region footer -->
         <div class="container container-footer">
@@ -421,9 +411,99 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="footer-subscription">
+                <p class="footer-subscription-text">Subscribe</p>
+                <form class="footer-subscription-form">
+
+                    <label class="footer-subscription-label" for="user-e-mail"></label>
+                    <input class="footer-subscription-input" name="user-e-mail" id="user-e-mail" placeholder="E-mail"
+                        type="email" />
+
+                    <button class="footer-subscription-btn" type="submit">
+                        Subscribe
+                        <svg class="footer-subscription-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-plane"></use>
+                        </svg>
+                    </button>
+
+                </form>
+            </div>
         </div>
         <!-- #endregion -->
     </footer>
+    <!-- #region modal window -->
+    <div class="modal-backdrop" data-modal>
+        <div class="modal-window">
+            <button type="button" class="modal-btn-close" data-modal-close>
+                <svg class="modal-btn-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-cross"></use>
+                </svg>
+            </button>
+            <p class="modal-title">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+
+                <div class="modal-box">
+                    <label class="modal-label" for="user-name">Name</label>
+                    <div class="modal-box-input">
+                        <input class="modal-input" required name="user-name" id="user-name" type="text">
+                        <svg class="modal-box-icon" width="12" height="12">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="modal-box">
+                    <label class="modal-label" for="user-tel">Phone</label>
+                    <div class="modal-box-input">
+                        <input class="modal-input" required name="user-tel" id="user-tel" type="tel">
+                        <svg class="modal-box-icon" width="13" height="13">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="modal-box">
+                    <label class="modal-label" for="user-email">Email</label>
+                    <div class="modal-box-input">
+                        <input class="modal-input" required name="user-email" id="user-email" type="email">
+                        <svg class="modal-box-icon" width="15" height="12">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="modal-box">
+                    <label class="modal-label" for="user-comment">Comment</label>
+                    <textarea class="modal-comment" name="user-comment" id="user-comment"
+                        placeholder="Text input"></textarea>
+                </div>
+
+                <div class="modal-end">
+                    <input class="modal-checkbox visually-hidden" type="checkbox" id="checkbox">
+                    <label class="modal-checkbox-text" for="checkbox">
+                        <span class="modal-checkbox-border">
+                            <svg class="modal-checkbox-icon" width="10" height="7">
+                                <use href="./images/icons.svg#icon-choice"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the
+                        <a class="modal-checkbox-link" href="">Privacy
+                            Policy</a>
+                    </label>
+
+                </div>
+
+                <button class="modal-btn" type="submit">Send</button>
+
+            </form>
+
+
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
