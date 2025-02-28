@@ -560,6 +560,7 @@ img {
 .footer-subscription-btn {
   font-weight: 500;
   letter-spacing: 0.04em;
+  line-height: 1.5;
   text-align: center;
   color: white;
   background-color: #4D5AE5;
